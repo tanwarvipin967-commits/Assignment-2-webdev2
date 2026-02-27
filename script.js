@@ -8,8 +8,6 @@ const eventBox = document.querySelector(".event_state");
 
 let visitedCities = JSON.parse(localStorage.getItem("visitedCities")) || [];
 
-/* -------- SIMPLE CONSOLE LOG -------- */
-
 function logEvent(message) {
     const p = document.createElement("p");
     p.textContent = message;
@@ -20,8 +18,6 @@ function resetConsole() {
     eventBox.innerHTML = "";
 }
 
-/* -------- FORM SUBMIT -------- */
-
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const city = cityInput.value.trim();
@@ -29,8 +25,6 @@ form.addEventListener("submit", async (e) => {
         searchWeather(city);
     }
 });
-
-/* -------- WEATHER FUNCTION -------- */
 
 async function searchWeather(city) {
 
@@ -78,8 +72,6 @@ async function searchWeather(city) {
 
     logEvent("2️⃣ Sync End");
 }
-
-/* -------- HISTORY -------- */
 
 function showHistory() {
     searchHistory.innerHTML = "";
