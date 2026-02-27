@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e2a78, #2d3e98);
+    color: white;
+    padding: 40px;
+}
+
+.app {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #ff7a2f;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.searchHistory button {
+    margin: 5px 5px 0 0;
+    background: #ff7a2f;
+}
+
+.weatherData p {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.console-card {
+    background: #f4f4f4;
+    color: black;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.event_state {
+    background: #111c4e;
+    color: #00ff99;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: monospace;
+    min-height: 120px;
+}
